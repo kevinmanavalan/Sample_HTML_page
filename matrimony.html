@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body{
+      background-color: #93C572;
+    }
+    h1{
+      background-color: #FFE5B4;
+    }
+    select{
+      background-color: #3CBC8D;
+    }
+    input[type=text] {
+      width: 50;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: none;
+      background-color: #3CBC8D;
+      color: ;
+    }
+    input[type=tel] {
+      width: 50;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: none;
+      background-color: #3CBC8D;
+      color: ;
+    }
+    input[type=email] {
+      width: 50;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: none;
+      background-color: #3CBC8D;
+      color: ;
+    }
+    input[type=password] {
+      width: 50;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: none;
+      background-color: #3CBC8D;
+      color: ;
+    }
+    .button {
+      background-color: #CC3333;
+      border: none;
+      color: black;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      border-radius: 15px;
+      cursor: pointer;
+    }
+  </style>
+    <title>Matrimonial User sign in</title>
+</head>
+<body>
+    <div class="container ">
+      <center>
+        <header class="header">
+            <h1 id="title" style="text-align:center">ManavalanMatrimony.com </h1>
+            <h2 id="new user">New User</h2>
+              <h3 id="register here">Register here</h3>
+        </header>
+        <form action="" id="signup form">
+
+
+          <div>
+              <p id="profile">Profile created for:
+                 <select name="relation" required id="relation">
+                    <option value disabled selected >Select relation</option>
+                    <option value="me">me</option>
+                    <option value="son">son</option>
+                    <option value="daughter">daughter</option>
+                    <option value="nephew">nephew</option>
+                    <option value="relative">relative</option>
+                    <option value="friend">Other</option>
+                </select></p>
+
+          </div>
+
+          <br/>
+          <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" size="20" required>
+            </div>
+              <br/>
+          <div>
+            <p id = "gender">Gender:
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male">male</label>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">female</label>
+              <input type="radio" id="other" name="gender" value="other">
+              <label for="other">other</label></p>
+
+          </div>
+          <br/>
+          <div>
+            <label for="dob">Date of birth:</label>
+            <input type="text" name="day" id="day" placeholder="DD" size="1" required>
+            <input type="text" name="month" id="month" placeholder="MM" size="1" required>
+            <input type="text" name="year" id="year" placeholder="YY" size="1" required></p>
+          </div>
+          <br/>
+          <div>
+            <p id="denomination">Denomination:
+              <select name="religion" required id="religion">
+                <option value disabled selected>Select religion</option>
+                <option value="christian">christian</option>
+                <option value="hindu">hindu</option>
+                <option value="muslim">muslim</option>
+              </select></p>
+          </div>
+          <br/>
+          <!--<div>
+            <p id="cast">Cast:
+              <select name="subcast" required id="subcast">
+                <option value diasabled selected>Select cast</option>
+                <option value="general">general</option>
+                <option value="sc">SC</option>
+                <option value="st">ST</option>
+                <option value="obc">OBC</option>
+              </select></p>
+          </div>
+          <br/>-->
+          <div>
+            <p id="qualification">Qualifications:
+              <br>
+              <input type="checkbox" id="btech" name="btech" value="Btech">
+              <label for="btech">B.Tech</label>
+              <input type="checkbox" id="bsc" name="bsc" value="bsc">
+              <label for="bsc">B.Sc</label>
+              <input type="checkbox" id="bca" name="bca" value="bca">
+              <label for="bca">BCA</label><br>
+              <input type="checkbox" id="bcom" name="bcom" value="bcom">
+              <label for="bcom">B.Com</label>
+              <input type="checkbox" id="mcom" name="mcom" value="mcom">
+              <label for="mcom">M.Com</label>
+              <input type="checkbox" id="mba" name="mba" value="mba">
+              <label for="mba">MBA</label><br>
+          </div>
+          <br/>
+          <div>
+            <label for="country">Enter Country:</label>
+            <input type="text" name="country" id="country" placeholder="Enter Country" size="20" required>
+          </div>
+          <br/><br/>
+          <div>
+            <label for="mothertongue">Mother Tongue:</label>
+            <input type="text" name="mothertongue" id="mothertongue" placeholder="Eg: Malayalam" size="20" required>
+          </div>
+          <br/><br/>
+          <div>
+            <label for="phone">Enter a phone number:</label>
+            <input type="radio" id="mob" name="mob" value="mob">
+            <label for="mob">Mobile</label>
+            <input type="radio" id="home" name="home" value="home">
+            <label for="home">Home</label><br/>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your contact number" required>
+          </div>
+          <br/><br/>
+          <div>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your mail id" required>
+          </div>
+          <br/><br/>
+          <div>
+            <label for="password">Login Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter a 6 digit password" required>
+          </div>
+          <div>
+            <button type="submit" id="submit" class="button">Register now!</button>
+          </div>
+        </form>
+      </center>
+    </div>
+</body>
+</html>
